@@ -70,7 +70,7 @@ function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`font-['Poppins:Regular',_sans-serif] text-[16px] xl:text-[18px] transition-colors duration-200 ${
+                className={`font-['Inter',_sans-serif] text-[16px] xl:text-[18px] transition-colors duration-200 ${
                   activeSection === item.id ? 'text-[#f8f7f9]' : 'text-[#f8f7f9]/70 hover:text-[#f8f7f9]'
                 }`}
               >
@@ -97,7 +97,7 @@ function Navigation() {
           </div>
 
           {/* Logo/Brand (mobile) */}
-          <div className="lg:hidden font-['Poppins:Bold',_sans-serif] text-[18px] text-[#f8f7f9]">
+          <div className="lg:hidden font-['Inter',_sans-serif] font-bold text-[18px] text-[#f8f7f9]">
             KARL
           </div>
           
@@ -129,7 +129,7 @@ function Navigation() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`font-['Poppins:Regular',_sans-serif] text-[16px] text-left transition-colors duration-200 ${
+                  className={`font-['Inter',_sans-serif] text-[16px] text-left transition-colors duration-200 ${
                     activeSection === item.id ? 'text-[#f8f7f9]' : 'text-[#f8f7f9]/70'
                   }`}
                 >
@@ -321,17 +321,17 @@ function HeroSection() {
         {/* Content - Centered */}
         <div className="flex flex-col items-center text-center space-y-6 md:space-y-8 max-w-2xl mx-auto">
           <div className="space-y-3 md:space-y-4">
-            <h2 className="font-['Poppins:Bold',_sans-serif] text-[18px] md:text-[20px] lg:text-[24px] text-[#f8f7f9]">
+            <h2 className="font-['Inter',_sans-serif] font-bold text-[18px] md:text-[20px] lg:text-[24px] text-[#f8f7f9]">
               HI, I'M KARL TOUSSAINT
             </h2>
             <ul className="space-y-2 md:space-y-3">
-              <li className="font-['Poppins:Regular',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9]">
+              <li className="font-['Inter',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9]">
                 • Cybersecurity & AI Automation Consultant
               </li>
-              <li className="font-['Poppins:Regular',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9]">
+              <li className="font-['Inter',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9]">
                 • Web Developer
               </li>
-              <li className="font-['Poppins:Regular',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9]">
+              <li className="font-['Inter',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9]">
                 • Software Developer
               </li>
             </ul>
@@ -342,7 +342,7 @@ function HeroSection() {
               onClick={scrollToAbout}
               className="group border-2 border-[#f8f7f9] px-6 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl transition-all duration-300 hover:bg-[#f8f7f9] hover:text-[#1f1f1f] text-center"
             >
-              <span className="font-['Poppins:Bold',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9] group-hover:text-[#1f1f1f] transition-colors duration-300">
+              <span className="font-['Inter',_sans-serif] font-bold text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9] group-hover:text-[#1f1f1f] transition-colors duration-300">
                 ABOUT ME
               </span>
             </button>
@@ -351,7 +351,7 @@ function HeroSection() {
               onClick={scrollToExperience}
               className="group border-2 border-[#f8f7f9] px-6 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl transition-all duration-300 hover:bg-[#f8f7f9] hover:text-[#1f1f1f]"
             >
-              <span className="font-['Poppins:Bold',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9] group-hover:text-[#1f1f1f] transition-colors duration-300">
+              <span className="font-['Inter',_sans-serif] font-bold text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9] group-hover:text-[#1f1f1f] transition-colors duration-300">
                 VIEW MY PROJECTS
               </span>
             </button>
@@ -365,7 +365,7 @@ function HeroSection() {
               }}
               className="group border-2 border-[#f8f7f9] px-6 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl transition-all duration-300 hover:bg-[#f8f7f9] hover:text-[#1f1f1f] text-center"
             >
-              <span className="font-['Poppins:Bold',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9] group-hover:text-[#1f1f1f] transition-colors duration-300">
+              <span className="font-['Inter',_sans-serif] font-bold text-[16px] md:text-[20px] lg:text-[24px] text-[#f8f7f9] group-hover:text-[#1f1f1f] transition-colors duration-300">
                 PAYMENTS
               </span>
             </button>
@@ -380,26 +380,26 @@ function AboutSection() {
   return (
     <section id="about" className="py-12 md:py-16 lg:py-20 relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <h2 className="font-['Poppins:Bold',_sans-serif] text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
+        <h2 className="font-['Inter',_sans-serif] font-bold text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
           About me
         </h2>
         
         <div className="max-w-4xl mx-auto">
-          <p className="font-['Poppins:Regular',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] leading-[1.5] text-center">
+          <p className="font-['Inter',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] leading-[1.5] text-center">
             Results-driven cybersecurity and technology professional with over 20 years in sales leadership, systems design, and security consulting. Expert in Linux systems hardening, firewall architecture, AI-driven automation, and full-stack web development. Combines business acumen with deep technical knowledge to design scalable, secure infrastructures and optimize performance across multi-platform environments.
           </p>
         </div>
 
         {/* Education */}
         <div className="mt-12 md:mt-16">
-          <h3 className="font-['Poppins:Bold',_sans-serif] text-[20px] md:text-[22px] lg:text-[24px] text-[#f8f7f9] mb-6 md:mb-8 text-center">
+          <h3 className="font-['Inter',_sans-serif] font-bold text-[20px] md:text-[22px] lg:text-[24px] text-[#f8f7f9] mb-6 md:mb-8 text-center">
             EDUCATION
           </h3>
           <div className="max-w-4xl mx-auto">
-            <h4 className="font-['Poppins:ExtraBold',_sans-serif] text-[18px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-2 text-center">
+            <h4 className="font-['Inter',_sans-serif] font-extrabold text-[18px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-2 text-center">
               Associate of Business Administration
             </h4>
-            <p className="font-['Poppins:Medium',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] leading-[1.5] text-center">
+            <p className="font-['Inter',_sans-serif] font-medium text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] leading-[1.5] text-center">
               Valencia College — Orlando, FL | Feb 2006 – May 2009
             </p>
           </div>
@@ -486,25 +486,25 @@ function ExperienceSection() {
   return (
     <section id="experience" className="py-12 md:py-16 lg:py-20 relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <h2 className="font-['Poppins:Bold',_sans-serif] text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
+        <h2 className="font-['Inter',_sans-serif] font-bold text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
           Experience
         </h2>
         
         <div className="space-y-8 md:space-y-12 max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
             <div key={index} className="text-center">
-              <h3 className="font-['Poppins:ExtraBold',_sans-serif] text-[18px] md:text-[22px] lg:text-[26px] text-[rgba(248,247,249,0.5)] mb-1">
+              <h3 className="font-['Inter',_sans-serif] font-extrabold text-[18px] md:text-[22px] lg:text-[26px] text-[rgba(248,247,249,0.5)] mb-1">
                 {exp.title}
               </h3>
-              <h4 className="font-['Poppins:SemiBold',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-1">
+              <h4 className="font-['Inter',_sans-serif] font-semibold text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-1">
                 {exp.company}
               </h4>
-              <p className="font-['Poppins:ExtraLight',_sans-serif] text-[14px] md:text-[18px] lg:text-[22px] text-[rgba(248,247,249,0.5)] mb-3">
+              <p className="font-['Inter',_sans-serif] font-extralight text-[14px] md:text-[18px] lg:text-[22px] text-[rgba(248,247,249,0.5)] mb-3">
                 {exp.location} | {exp.period}
               </p>
               <ul className="space-y-2 text-center">
                 {exp.responsibilities.map((resp, idx) => (
-                  <li key={idx} className="font-['Poppins:Regular',_sans-serif] text-[14px] md:text-[18px] lg:text-[22px] text-[rgba(248,247,249,0.5)] leading-[1.5]">
+                  <li key={idx} className="font-['Inter',_sans-serif] text-[14px] md:text-[18px] lg:text-[22px] text-[rgba(248,247,249,0.5)] leading-[1.5]">
                     {resp}
                   </li>
                 ))}
@@ -559,20 +559,20 @@ function ProjectsSection() {
   return (
     <section id="projects" className="py-12 md:py-16 lg:py-20 relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <h2 className="font-['Poppins:Bold',_sans-serif] text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
+        <h2 className="font-['Inter',_sans-serif] font-bold text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
           Projects
         </h2>
         
         <div className="space-y-6 md:space-y-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <div key={index} className="text-center">
-              <h3 className="font-['Poppins:ExtraBold',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-1">
+              <h3 className="font-['Inter',_sans-serif] font-extrabold text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-1">
                 {project.title}
               </h3>
-              <p className="font-['Poppins:ExtraLight',_sans-serif] text-[14px] md:text-[18px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-2 md:mb-3">
+              <p className="font-['Inter',_sans-serif] font-extralight text-[14px] md:text-[18px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-2 md:mb-3">
                 {project.period}
               </p>
-              <p className="font-['Poppins:Medium',_sans-serif] text-[14px] md:text-[18px] lg:text-[24px] text-[rgba(248,247,249,0.5)] leading-[1.5]">
+              <p className="font-['Inter',_sans-serif] font-medium text-[14px] md:text-[18px] lg:text-[24px] text-[rgba(248,247,249,0.5)] leading-[1.5]">
                 {project.description}
               </p>
             </div>
@@ -610,21 +610,21 @@ function CertificationsSection() {
   return (
     <section id="certifications" className="py-12 md:py-16 lg:py-20 relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <h2 className="font-['Poppins:Bold',_sans-serif] text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
+        <h2 className="font-['Inter',_sans-serif] font-bold text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
           Certifications
         </h2>
         
         <div className="space-y-6 md:space-y-8 max-w-4xl mx-auto">
           {certifications.map((cert, index) => (
             <div key={index} className="text-center">
-              <h3 className="font-['Poppins:ExtraBold',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-1 break-words">
+              <h3 className="font-['Inter',_sans-serif] font-extrabold text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-1 break-words">
                 {cert.title}
               </h3>
-              <p className="font-['Poppins:ExtraLight',_sans-serif] text-[14px] md:text-[18px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-2">
+              <p className="font-['Inter',_sans-serif] font-extralight text-[14px] md:text-[18px] lg:text-[24px] text-[rgba(248,247,249,0.5)] mb-2">
                 {cert.year}
               </p>
               {cert.organization && (
-                <p className="font-['Poppins:Medium',_sans-serif] text-[14px] md:text-[18px] lg:text-[24px] text-[rgba(248,247,249,0.5)]">
+                <p className="font-['Inter',_sans-serif] font-medium text-[14px] md:text-[18px] lg:text-[24px] text-[rgba(248,247,249,0.5)]">
                   {cert.organization}
                 </p>
               )}
@@ -640,29 +640,29 @@ function ContactsSection() {
   return (
     <section id="contacts" className="py-12 md:py-16 lg:py-20 relative pb-16">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <h2 className="font-['Poppins:Bold',_sans-serif] text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
+        <h2 className="font-['Inter',_sans-serif] font-bold text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-[#f8f7f9] mb-8 md:mb-12 text-center">
           Contacts
         </h2>
         
         <div className="space-y-4 max-w-4xl mx-auto text-center">
           <div className="flex flex-col items-center gap-2">
-            <span className="font-['Poppins:ExtraBold',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)]">
+            <span className="font-['Inter',_sans-serif] font-extrabold text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)]">
               Email
             </span>
             <a 
               href="mailto:kt2saint.create@gmail.com"
-              className="font-['Poppins:Medium',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] hover:text-[#f8f7f9] transition-colors"
+              className="font-['Inter',_sans-serif] font-medium text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] hover:text-[#f8f7f9] transition-colors"
             >
               kt2saint.create@gmail.com
             </a>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <span className="font-['Poppins:ExtraBold',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)]">
+            <span className="font-['Inter',_sans-serif] font-extrabold text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)]">
               Phone
             </span>
             <a 
               href="tel:+16892454250"
-              className="font-['Poppins:Medium',_sans-serif] text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] hover:text-[#f8f7f9] transition-colors"
+              className="font-['Inter',_sans-serif] font-medium text-[16px] md:text-[20px] lg:text-[24px] text-[rgba(248,247,249,0.5)] hover:text-[#f8f7f9] transition-colors"
             >
               689-245-4250
             </a>
