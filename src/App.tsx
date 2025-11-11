@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { PaymentSection } from './components/PaymentSection';
 import svgPaths from "./imports/svg-6sovak61ez";
-import imgAdobeExpressFile31 from "figma:asset/24fc04f71f59cbd09402a9281c64cb88198e3a12.png";
-import logoKarl from "figma:asset/a15e50d78d65775af1af53d17931f664763bc13b.png";
+import imgAdobeExpressFile31 from "./assets/24fc04f71f59cbd09402a9281c64cb88198e3a12.png";
+import logoKarl from "./assets/a15e50d78d65775af1af53d17931f664763bc13b.png";
 
 function Navigation() {
   const [activeSection, setActiveSection] = useState('home');
