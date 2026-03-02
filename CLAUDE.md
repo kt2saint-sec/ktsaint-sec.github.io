@@ -10,6 +10,7 @@
 - **Purpose:** Personal portfolio showcasing cybersecurity, AI automation, web development work
 - **Tech Stack:** React 18 + TypeScript + Vite + Tailwind CSS 4 + Radix UI
 - **Dev Server:** http://localhost:3001
+- **Production URL:** https://karl-portfolio-static.vercel.app
 - **Location:** `/home/rebelsts/personalwebsite/`
 
 **Port Configuration:**
@@ -110,19 +111,25 @@ Installed Chromium extensions for manual testing:
 - **Wappalyzer** - Technology detection
 
 ### Current Accessibility Issues
-⚠️ **Color Contrast Violation:**
-- Button with `background: #4ca3e5` and `color: #ffffff`
-- Current contrast ratio: 2.73:1 (needs 4.5:1 for WCAG AA)
-- Location: `.bg-[var(--brand-primary)]` class
-- Fix: Darken background to `#2583c7` or similar
-
 ⚠️ **Heading Hierarchy:**
 - Check proper h1 → h2 → h3 nesting
 - Avoid skipping heading levels
 
-⚠️ **Page Title:**
-- Current: "FuturePrint Software for Epson Printers"
-- Expected: Portfolio-specific title (e.g., "Karl Toussaint | Portfolio")
+⚠️ **Horizontal Scroll Accessibility:**
+- Keyboard users cannot navigate between sections (no Tab/Arrow key support)
+- Screen readers get flat DOM with no section navigation cues
+
+### Known Functional Gaps
+- **Contact form:** NOT connected to any backend (TODO in ContactSection.tsx:13) — shows fake success
+- **Project images/videos:** Referenced in projects.json but NOT rendered on ProjectDetailPage
+- **No og:image:** Social shares have no preview image (missing from index.html)
+- **No SPA rewrites:** Direct navigation to /project/:id will 404 on static hosts without rewrite config
+- **No resume/CV download:** Common portfolio expectation, currently missing
+- **No LinkedIn link:** Only GitHub, Instagram, TikTok in social links
+
+### Fixed Issues (verified 2026-03-01)
+- Page title: Now correctly "Karl Toussaint | Cybersecurity & AI Automation"
+- Color scheme: Cyberpunk neon theme replaced old brand-primary colors
 
 ## Test Structure
 ```

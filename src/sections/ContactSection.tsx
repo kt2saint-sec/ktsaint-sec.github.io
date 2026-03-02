@@ -8,11 +8,32 @@ import contactBg from '@/assets/illustrations/rooftop-contact.webp';
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // TODO: Connect to form backend (Formspree, Netlify Forms, etc.)
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(false);
+
+    const formData = new FormData(e.currentTarget);
+    formData.append('access_key', import.meta.env.VITE_WEB3FORMS_KEY);
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -75,8 +96,13 @@ export default function ContactSection() {
                   placeholder="What can I help you with?"
                   required
                 />
-                <NeonButton type="submit" variant="cyan" size="lg" className="w-full">
-                  Let's Build Something
+                {error && (
+                  <p className="text-red-400 text-sm text-center">
+                    Something went wrong. Please try again or email me directly.
+                  </p>
+                )}
+                <NeonButton type="submit" variant="cyan" size="lg" className="w-full" disabled={submitting}>
+                  {submitting ? 'Sending...' : "Let's Build Something"}
                 </NeonButton>
               </form>
             )}
@@ -112,9 +138,9 @@ export default function ContactSection() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-text-muted hover:text-neon-magenta transition-colors duration-300 text-sm"
+                    className="text-text-muted hover:text-neon-cyan transition-colors duration-300 text-sm"
                   >
-                    <span className="text-neon-magenta/60">{social.label}:</span> {social.handle}
+                    <span className="text-neon-cyan/60">{social.label}:</span> {social.handle}
                   </a>
                 ))}
               </div>
